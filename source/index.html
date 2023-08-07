@@ -1,11 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="page">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="menu">
+        <button class="menu__button">
+          <img src="img/burger_d.svg" alt="menu button" class="menu__button-image">
+        </button>
+        <img src="img/logo_WB_d.svg" alt="main logo">
+      </div>
+      <div class="search">
+        <input type="text" class="search__input">
+        <img src="img/search_d.svg" alt="" class="search__button">
+      </div>
+      <div class="user">
+        <button class="user__button-user">
+          <img src="img/user_d.svg" alt="user" class="user__image">
+          Профиль
+        </button>
+        <button class="user__button-basket">
+          <img src="img/basket_d.svg" alt="user" class="basket__image">
+          Корзина
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__section">
+        <section class="basket">
+          <h2 class="basket__title">Корзина</h2>
+          <input id="choose-all" type="checkbox">
+          <label for="choose-all">Выбрать все</label>
+          <div class="basket__line"></div>
+          <div class="basket__item">
+            <div class="basket__desc-block">
+              <input id="choose" type="checkbox" class="basket__checkbox">
+              <img src="/source/img/image_shirt_c_d.jpg" alt="shirt" width="72px" height="96px">
+              <div class="basket__item-description">
+                <h3 class="basket__item-title">Футболка UZcotton мужская</h3>
+                <div class="basket__item-properties">
+                  <p class="basket__item-property">Цвет: <span class="basket__item-property_color">белый</span></p>
+                  <p class="basket__item-property">Размер: <span class="basket__item-property_size">56</span></p>
+                </div>
+                <p class="basket__stock">Коледино WB</p>
+                <div class="basket__seller">
+                  <p class="basket__seller-title">ООО Вайлдберриз</p><button class="basket__seller-info"><img
+                      src="/source/img/seller-info.svg" alt="seller info"></button>
+                </div>
+              </div>
+            </div>
+            <div class="basket__value-block">
+              <div class="basket__quantity-block">
+                <div class="basket__quantity">
+                  <button class="basket__quantity_minus"><img src="img/q-minus.svg" alt="minus"></button>
+                  <input id="child" type="text" value="1">
+                  <button class="basket__quantity_plus"><img src="img/q-plus.svg" alt="plus"></button>
+                </div>
+                <p class="basket__remainder">Осталось <span class="basket__remainder-value">2</span> шт.</p>\
+                <div class="basket__activity-btn">
+                  <button class="basket__favorite-btn"><img src="img/like_d.svg" alt="favorite"></button>
+                  <button class="basket__trash-btn"><img src="img/trash_d.svg" alt="trash"></button>
+                </div>
+              </div>
+              <div class="basket__price-block">
+                <p class="basket__price"><span class="basket__price-value">522</span> сом</p>
+                <p class="basket__price-full"><span class="basket__price-value-full">1051</span> сом</p>
+              </div>
+            </div>
+          </div>
+          <div class="basket__item">
+            <div class="basket__desc-block">
+              <input id="choose" type="checkbox" class="basket__checkbox">
+              <img src="/source/img/image_shirt_c_d.jpg" alt="shirt" width="72px" height="96px">
+              <div class="basket__item-description">
+                <h3 class="basket__item-title">Футболка UZcotton мужская</h3>
+                <div class="basket__item-properties">
+                  <p class="basket__item-property">Цвет: <span class="basket__item-property_color">белый</span></p>
+                  <p class="basket__item-property">Размер: <span class="basket__item-property_size">56</span></p>
+                </div>
+                <p class="basket__stock">Коледино WB</p>
+                <div class="basket__seller">
+                  <p class="basket__seller-title">ООО Вайлдберриз</p><button class="basket__seller-info"><img
+                      src="/source/img/seller-info.svg" alt="seller info"></button>
+                </div>
+              </div>
+            </div>
+            <div class="basket__value-block">
+              <div class="basket__quantity-block">
+                <div class="basket__quantity">
+                  <button class="basket__quantity_minus"><img src="img/q-minus.svg" alt="minus"></button>
+                  <input id="child" type="text" value="1">
+                  <button class="basket__quantity_plus"><img src="img/q-plus.svg" alt="plus"></button>
+                </div>
+                <p class="basket__remainder">Осталось <span class="basket__remainder-value">2</span> шт.</p>\
+                <div class="basket__activity-btn">
+                  <button class="basket__favorite-btn"><img src="img/like_d.svg" alt="favorite"></button>
+                  <button class="basket__trash-btn"><img src="img/trash_d.svg" alt="trash"></button>
+                </div>
+              </div>
+              <div class="basket__price-block">
+                <p class="basket__price"><span class="basket__price-value">522</span> сом</p>
+                <p class="basket__price-full"><span class="basket__price-value-full">1051</span> сом</p>
+              </div>
+            </div>
+          </div>
+          <div class="basket__item">
+            <div class="basket__desc-block">
+              <input id="choose" type="checkbox" class="basket__checkbox">
+              <img src="/source/img/image_shirt_c_d.jpg" alt="shirt" width="72px" height="96px">
+              <div class="basket__item-description">
+                <h3 class="basket__item-title">Футболка UZcotton мужская</h3>
+                <div class="basket__item-properties">
+                  <p class="basket__item-property">Цвет: <span class="basket__item-property_color">белый</span></p>
+                  <p class="basket__item-property">Размер: <span class="basket__item-property_size">56</span></p>
+                </div>
+                <p class="basket__stock">Коледино WB</p>
+                <div class="basket__seller">
+                  <p class="basket__seller-title">ООО Вайлдберриз</p><button class="basket__seller-info"><img
+                      src="/source/img/seller-info.svg" alt="seller info"></button>
+                </div>
+              </div>
+            </div>
+            <div class="basket__value-block">
+              <div class="basket__quantity-block">
+                <div class="basket__quantity">
+                  <button class="basket__quantity_minus"><img src="img/q-minus.svg" alt="minus"></button>
+                  <input id="child" type="text" value="1">
+                  <button class="basket__quantity_plus"><img src="img/q-plus.svg" alt="plus"></button>
+                </div>
+                <p class="basket__remainder">Осталось <span class="basket__remainder-value">2</span> шт.</p>\
+                <div class="basket__activity-btn">
+                  <button class="basket__favorite-btn"><img src="img/like_d.svg" alt="favorite"></button>
+                  <button class="basket__trash-btn"><img src="img/trash_d.svg" alt="trash"></button>
+                </div>
+              </div>
+              <div class="basket__price-block">
+                <p class="basket__price"><span class="basket__price-value">522</span> сом</p>
+                <p class="basket__price-full"><span class="basket__price-value-full">1051</span> сом</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="missing">
+          <div class="missing__header">
+            <h2 class="missing__title">Отсутствуют · <span class="missing__value">3</span> товара</h2>
+            <button class="missing__btn-hide"><img src="img/hide-btn.svg" alt="hide"></button>
+          </div>
+          <div class="missing__line"></div>
+          <div class="missing__item">
+            <div class="missing__desc-block">
+              <img src="/source/img/image_shirt_b_d.jpg" alt="shirt" width="72px" height="96px">
+              <div class="missing__item-description">
+                <h3 class="missing__item-title">Футболка UZcotton мужская</h3>
+                <div class="missing__item-properties">
+                  <p class="missing__item-property">Цвет: <span class="missing__item-property_color">белый</span></p>
+                  <p class="missing__item-property">Размер: <span class="missing__item-property_size">56</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="basket__activity-btn">
+              <button class="basket__favorite-btn"><img src="img/like_d.svg" alt="favorite"></button>
+              <button class="basket__trash-btn"><img src="img/trash_d.svg" alt="trash"></button>
+            </div>
+          </div>
+          <div class="missing__item">
+            <div class="missing__desc-block">
+              <img src="/source/img/image_shirt_b_d.jpg" alt="shirt" width="72px" height="96px">
+              <div class="missing__item-description">
+                <h3 class="missing__item-title">Футболка UZcotton мужская</h3>
+                <div class="missing__item-properties">
+                  <p class="missing__item-property">Цвет: <span class="missing__item-property_color">белый</span></p>
+                  <p class="missing__item-property">Размер: <span class="missing__item-property_size">56</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="basket__activity-btn">
+              <button class="basket__favorite-btn"><img src="img/like_d.svg" alt="favorite"></button>
+              <button class="basket__trash-btn"><img src="img/trash_d.svg" alt="trash"></button>
+            </div>
+          </div>
+          <div class="missing__item">
+            <div class="missing__desc-block">
+              <img src="/source/img/image_shirt_b_d.jpg" alt="shirt" width="72px" height="96px">
+              <div class="missing__item-description">
+                <h3 class="missing__item-title">Футболка UZcotton мужская</h3>
+                <div class="missing__item-properties">
+                  <p class="missing__item-property">Цвет: <span class="missing__item-property_color">белый</span></p>
+                  <p class="missing__item-property">Размер: <span class="missing__item-property_size">56</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="basket__activity-btn">
+              <button class="basket__favorite-btn"><img src="img/like_d.svg" alt="favorite"></button>
+              <button class="basket__trash-btn"><img src="img/trash_d.svg" alt="trash"></button>
+            </div>
+          </div>
+        </section>
+        <section class="delivery">
+          
+        </section>
+        <section class="payment">
+  
+        </section>
+        <section class="recipient">
+  
+        </section>
+      </div>
+      <aside class="total">
+
+      </aside>
+    </main>
+    <footer class="footer">
+
+    </footer>
+  </body>
 </html>
