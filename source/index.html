@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
   </head>
   <body class="page__body">
@@ -14,17 +16,19 @@
         <img src="img/logo_WB_d.svg" alt="main logo">
       </div>
       <div class="search">
-        <input type="text" class="search__input">
-        <img src="img/search_d.svg" alt="" class="search__button">
+        <input type="text" class="search__input" placeholder="Я ищу...">
+        <button class="search__button">
+          <img src="img/search_d.svg" alt="" class="search__button-img">
+        </button>
       </div>
       <div class="user">
         <button class="user__button-user">
-          <img src="img/user_d.svg" alt="user" class="user__image">
-          Профиль
+          <img src="img/user_d.svg" alt="user" class="user__image" width="20px" height="20px">
+          <p class="user__btn-text">Профиль</p>
         </button>
         <button class="user__button-basket">
           <img src="img/basket_d.svg" alt="user" class="basket__image">
-          Корзина
+          <p class="user__btn-text">Корзина</p>
         </button>
       </div>
     </header>
@@ -200,21 +204,108 @@
           </div>
         </section>
         <section class="delivery">
-          
+          <div class="delivery__header">
+            <h2 class="delivery__title">Способ доставки</h2>
+            <button class="delivery__edit">Изменить</button>
+          </div>
+          <table class="delivery__table">
+            <tr class="delivery__row">
+              <td class="delivery__data-title">Пункт выдачи</td>
+              <td class="delivery__data">Бишкек, улица Ахматбека Суюмбаева, 12/1 <img src="img/rate_d.svg" alt="rate"> <span class="delivery__rate">4.99</span> Ежедневно с 10 до 21 </td>
+            </tr>
+            <tr class="delivery__row">
+              <td class="delivery__data-title">Стоимость доставки</td>
+              <td class="delivery__data"><span class="delivery__cost">Бесплатно</span></td>
+            </tr>
+            <tr class="delivery__row">
+              <td class="delivery__data-title"><span class="delivery__cost">5—6 февраля</span></td>
+              <td class="delivery__data">
+                <img src="img/image_shirt_c_d.jpg" alt="" width="40px" height="56px">
+                <img src="img/image_case_c_d.jpg" alt="" width="40px" height="56px">
+                <img src="img/image_penc_c_d.jpg" alt="" width="40px" height="56px">
+              </td>
+            </tr>
+            <tr class="delivery__row">
+              <td class="delivery__data-title"><span class="delivery__cost">7—8 февраля</span></td>
+              <td class="delivery__data"><img src="img/image_case_c_d.jpg" alt="case" width="40px" height="56px"></td>
+            </tr>
+          </table>
+          <p><img src="img/ok.svg" alt="price shipping">Обратная доставка товаров на склад при отказе — <span class="delivery__price">бесплатно</span></p>
         </section>
         <section class="payment">
-  
+          <div class="payment__header">
+            <h2 class="payment__title">Способ оплаты</h2>
+            <button class="payment__edit">Изменить</button>
+          </div>
+          <p class="payment__card"><img src="img/mir_d.svg" alt="card type"><span class="payment__card-number">1234 56•• •••• 1234</span><span class="payment__card-date"> 01/30</span></p>
+          <p class="payment__info">Спишем оплату с карты при получении</p>
         </section>
         <section class="recipient">
-  
+          <h2 class="recipient__title">Получатель</h2>
+          <form action="">
+            <input class="recipient__firstname" type="text" placeholder="Имя">
+            <input class="recipient__lastname" type="text" placeholder="Фамилия">
+            <input class="recipient__mail" type="email" placeholder="Почта">
+            <label class="recipient__tel-label">
+              Телефон
+              <input class="recipient__tel" type="tel" placeholder="+7 (988) 123-45-67">
+            </label>
+            <label class="recipient__inn-label">
+              <input class="recipient__inn" type="text" placeholder="ИНН">
+              Для таможенного оформления
+            </label>
+          </form>
         </section>
       </div>
       <aside class="total">
-
+        <table class="total__table">
+          <tr class="total__row">
+            <td class="total__data-main">Итого</td>
+            <td class="total__data-price">2 101 063 сом</td>
+          </tr>
+          <tr class="total__row">
+            <td class="total__data">203 товара</td>
+            <td class="total__data">2 302 048 сом</td>
+          </tr>
+          <tr class="total__row">
+            <td class="total__data-main">Скидка</td>
+            <td class="total__data-price">−200 985 сом</td>
+          </tr>
+          <tr class="total__row">
+            <td class="total__data-main">Доставка</td>
+            <td class="total__data-price">Бесплатно</td>
+          </tr>
+        </table>
+        <div class="total__delivery">
+          <div class="total__delivery-info">
+            <h3 class="total__delivery-title">Доставка в пункт выдачи</h3>
+            <p class="total__delivery-adres">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+            <p class="total__delivery-date">5–8 фев</p>
+          </div>
+          <button class="total__delivery-edit"><img src="img/penc_d.svg" alt="edit"></button>
+        </div>
+        <p><img src="img/ok.svg" alt="price shipping">Обратная доставка товаров на склад при отказе — <span class="delivery__price">бесплатно</span></p>
+        <div class="total__payment">
+          <h2 class="total__payment-title">Оплата картой</h2>
+          <button class="total__payment-edit"><img src="img/penc_d.svg" alt="edit"></button>
+        </div>
+        <p class="payment__card"><img src="img/mir_d.svg" alt="card type"><span class="payment__card-number">1234 56•• •••• 1234</span><span class="payment__card-date"> 01/30</span></p>
+        <div class="total__payment-time">
+          <label class="total__payment-time-label">
+            <input type="checkbox">
+            Списать оплату сразу
+          </label>
+          <p class="total__payment-time-info">Спишем оплату с карты при получении</p>
+        </div>
+        <button class="total__order-btn">Заказать</button>
+        <label class="total__payment-agree-label">
+          <input type="checkbox">
+          Соглашаюсь с правилами пользования торговой площадкой и возврата
+        </label>
       </aside>
     </main>
     <footer class="footer">
-
+      <h2 class="footer__copyright">© 2022  ООО «Товары и точка»</h2>
     </footer>
   </body>
 </html>
